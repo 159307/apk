@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.0"
+sourceSets { main {//加上这句，你就能拥有神奇的so了~
+    
+    jniLibs.srcDirs = ['jniLibs'] }}
+    defaultConfig {
+        applicationId "wmz.qq1834661238"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 8
+        versionName "2.7"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+	compile 'com.android.support:cardview-v7:+'
+	compile 'com.android.support:appcompat-v7:+'
+	compile 'com.android.support:design:+'
+  
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+compile project(':candialog')
+
+}

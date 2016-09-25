@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent">
+
+	<com.roger.missview.library.MissView
+		android:id="@+id/missview"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_height="50dp"
+			android:layout_width="match_parent"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:id="@+id/ver"
+				android:textColor="#FF00F0"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:layout_marginTop="25dp"
+			android:gravity="center|center_vertical|center_horizontal">
+
+			<TextView
+				android:text="@string/hello_world"
+				android:textColor="#FF00F0"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/buff"/>
+
+			<ProgressBar
+				style="?android:attr/progressBarStyleHorizontal"
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:id="@+id/jindu"/>
+
+		</LinearLayout>
+
+		<CheckBox
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:textColor="#FF00F0"
+			android:text="加密    classes.dex"
+			android:layout_marginTop="10dp"
+			android:id="@+id/jiami"/>
+
+		<CheckBox
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:textColor="#FF00F0"
+			android:text="so加固  classes.dex"
+			android:id="@+id/so"/>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:layout_marginTop="10dp"
+			android:gravity="center|center_vertical|center_horizontal"
+			android:padding="10dp">
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="全自动"
+				android:id="@+id/test"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="半自动"
+				android:id="@+id/o"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="签名"
+				android:id="@+id/sign"
+				android:textColor="#FF00F0"
+				android:visibility="gone"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="联系作者"
+			android:textColor="#FF00F0"
+			android:gravity="right"
+			android:id="@+id/q"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="下载教程"
+			android:gravity="right"
+			android:textColor="#FF00F0"
+			android:layout_marginTop="15dp"
+			android:id="@+id/dows"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="帮助help"
+			android:gravity="right"
+			android:textColor="#FF00F0"
+			android:layout_marginTop="15dp"
+			android:id="@+id/help"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="获取积分开启全自动"
+			android:background="#00000000"
+			android:textColor="#FF00F0"
+			android:id="@+id/mainButton1"/>
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:gravity="bottom|left">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:textColor="#FF00F0"
+				android:text="Copyright © 2016 无名指 All Rights Resersed"
+				android:gravity="center|center_vertical|center_horizontal"
+				android:id="@+id/mainTextView1"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</RelativeLayout>
+
